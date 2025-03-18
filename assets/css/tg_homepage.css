@@ -1,0 +1,47 @@
+/* Destinations Section */
+.destinations {
+    padding: 50px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.destination-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination {
+    padding: 20px;
+    background: #ff5733;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.destination:hover {
+    background: #e04e2b;
+}
+
+/* Bookings Table */
+.bookings {
+    padding: 50px;
+    text-align: center;
+}
+
+.bookings table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.bookings th, .bookings td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.bookings th {
+    background: #333;
+    color: white;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Booking Details</title>
+    <!-- CSS PAGE -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- this page -->
+    <link rel="stylesheet" href="../assets/css/viewDetails.css">
+
+</head>
+<body>
+    <header>
+        <div class="topR">
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="bm">Bahasa Melayu</option>
+                <option value="cn">Mandarin</option>
+            </select>
+            <a href="tg_login.html">Login</a>
+            <a href="tg_signUp.html">Sign Up</a>
+        </div> <br> 
+
+        <div class="topR-search">
+            <input type="text" id="search-bar" placeholder="Search site" name="search-bar">
+            <button type="submit" class="searchbtn">🔍</button>
+        </div> <br> <br> <br>
+
+        <div class="navigationButton">
+            <!-- nav buttons -->
+            <nav>
+                <ul>
+                    <li><a href="tg_homepage.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Tour Guides</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1>View Details</h1>
+    <br>
+
+    <!-- View Bookings Section -->
+    <section>
+        <h2>ALL BOOKINGS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Package Selected</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <!-- Status can be confirmed or Not confirmed -->
+                    <!-- <th>Actions</th> -->
+                    
+                </tr>
+            </thead>
+
+            <tbody id="bookingsTableBody">
+                <!-- Dynamic content will be added here -->
+            </tbody>
+
+        </table>
+    </section>
+    <br> <br>
+
+    <!-- Chat Section -->
+    <section class="chat-section">
+        <h2>CHAT WITH CUSTOMERS</h2>
+        <div class="chat-box" id="chatBox">
+            <!-- Messages will be displayed here -->
+            <div class="message customer">Hello, I'm interested in booking a tour.</div>
+            <div class="message guide">Sure! Which package are you interested in?</div>
+        </div>
+        <br>
+        <input type="text" placeholder="Type a message..." class="chat-input">
+        <br>
+        <button type="button" class="sendbtn">Send</button>
+    </section>
+
+    <!-- JAVASCRIPT PAGE -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/viewDetails.js"></script>
+</body>
+</html>

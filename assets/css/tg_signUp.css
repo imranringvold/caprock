@@ -1,0 +1,93 @@
+h1 {
+    color: #4287f5;
+}
+
+/* Form container */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 10px 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* paragrpah */
+form p {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signupbtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.signupbtn:hover {
+    background-color: #45a049;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancelbtn:hover {
+    background-color: #da190b;
+}
+
+/* Hover effect for links, terms & privacy */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ensure responsive */
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 90%;
+    }
+}

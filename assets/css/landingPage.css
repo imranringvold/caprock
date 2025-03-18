@@ -1,0 +1,35 @@
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('assets/images/5816211.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}

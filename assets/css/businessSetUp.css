@@ -1,0 +1,162 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+
+/* section time */
+section {
+    display: inline-block;
+  }
+
+/* .calendar {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: auto;
+} */
+
+.month {
+    position: relative;
+    padding: 70px 25px;
+    width: 100%;
+    /* width: 300px; */
+    background: #1abc9c;
+    text-align: center;
+}
+
+/* unordered list */
+.month ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.month ul li {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* navigations */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+    cursor: pointer;
+    content: none; /* Ensures no content appears */
+}
+  
+.month .next {
+    float: right;
+    padding-top: 10px;
+    /* top: 20px; */
+    cursor: pointer;
+    content: none; /* Ensures no content appears */
+}
+
+/* weekday */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+/* weekday list */
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    flex: 1;
+    color: #666;
+    text-align: center;
+}
+
+/* days  */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+  
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+  
+.days li .active {
+    padding: 5px 8px; /* Added horizontal padding for balance */
+    background: #1abc9c;
+    color: white !important;
+}
+
+.days li:hover {
+    background-color: lightblue; /* Light blue when hovering */
+    cursor: pointer;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 600px) {
+    .calendar {
+        max-width: 100%;
+    }
+
+    .month ul li {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+
+    .days li {
+        font-size: 10px; /* Smaller font size for mobile */
+    }
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+  }
+
+
+/* Tour Package & Pricing */
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}

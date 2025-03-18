@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS PAGE -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- this page -->
+    <link rel="stylesheet" href="../assets/css/tg_homepage.css">
+    
+</head>
+<body>
+    <header>
+        <div class="topR">
+
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="bm">Bahasa Melayu</option>
+                <option value="cn">Mandarin</option>
+            </select>
+            <a href="tg_login.html">Login</a>
+            <a href="tg_signUp.html">Sign Up</a> 
+        </div> <br> <br> <br>
+
+        <div class="topR-search">
+            <input type="text" id="search-bar" placeholder="Search site" name="search-bar">
+            <button type="submit" class="searchbtn">🔍</button>
+        </div> <br> <br> <br>
+
+
+        <div class="navigationButton">
+            <!-- nav buttons -->
+            <nav>
+                <ul>
+                    <li><a href="tg_homepage.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Tour Guides</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Welcome to the Tour Guide's Home Page</h1>
+
+    <section class="bookings" id="bookings">
+        <h2>Upcoming Bookings Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Package</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="bookingsTable">
+                <!-- Data will be inserted -->
+            </tbody>
+        </table>
+    </section>
+
+    <h1>Your Set Up Booking Pages</h1>
+    <!-- Button to View Details Page -->
+    <a href="viewDetails.html">
+        <button type="button" class="booking01">View Booking Details</button>
+    </a>
+
+    <!-- Button to Business Setup Page -->
+    <a href="businessSetUp.html">
+        <button type="button" class="booking02">Manage Business Setup</button>
+    </a>
+
+    <!-- JAVASCRIPT PAGE -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/tg_homepage.js"></script>
+</body>
+</html>

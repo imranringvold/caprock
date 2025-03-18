@@ -1,0 +1,57 @@
+header {
+    background: lightcoral;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background: #333;
+    color: white;
+}
+
+
+/* Chat with Customers */
+.chat-box {
+    background: white;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 5px 0;
+    max-width: 60%;
+}
+
+.customer {
+    background: #f1f1f1;
+    align-self: flex-start;
+}
+
+.guide {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

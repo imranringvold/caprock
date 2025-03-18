@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide Business Set Up</title>
+    <!-- CSS PAGE -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- this page -->
+    <link rel="stylesheet" href="../assets/css/businessSetUp.css">
+
+</head>
+<body>
+    <header>
+        <div class="topR">
+
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="bm">Bahasa Melayu</option>
+                <option value="cn">Mandarin</option>
+            </select>
+            <a href="tg_login.html">Login</a>
+            <a href="tg_signUp.html">Sign Up</a> 
+        </div> <br> <br> <br>
+
+        <div class="topR-search">
+            <input type="text" id="search-bar" placeholder="Search site" name="search-bar">
+            <button type="submit" class="searchbtn">🔍</button>
+        </div> <br> <br> <br>
+
+
+        <div class="navigationButton">
+            <!-- nav buttons -->
+            <nav>
+                <ul>
+                    <li><a href="tg_homepage.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Tour Guides</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>CALENDAR</h1>
+    <!-- Availability Calendar -->
+    <!-- get some section in here -->
+    
+    <section>
+        <div class="calendar">
+            <div class="month">
+                <!-- unordered list/ <ul> -->
+                <ul>
+                  <!-- previous navigation -->
+                  <li class="prev">&#10094;</li> 
+                  <!-- next nav -->
+                  <li class="next">&#10095;</li> 
+                  <li>January<br> <span style="font-size:18px">2025</span></li>
+                </ul>
+              </div>
+
+              <ul class="weekdays">
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                <li>Sun</li>
+              </ul>
+
+              <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <!-- shiny when you click  -->
+                <li><span class="active">10</span></li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+              </ul>
+        </div> <br> <br>
+
+        <h3>Select Availability Period</h3>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate">
+    
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate">
+        <br> <br>
+
+        <h3>Select Available Time</h3>
+        <label for="timeSlot">Time Slot:</label>
+        <select id="timeSlot">
+            <option value="08:00-10:00">08:00 - 10:00</option>
+            <option value="10:00-12:00">10:00 - 12:00</option>
+            <option value="13:00-15:00">13:00 - 15:00</option>
+            <option value="15:00-17:00">15:00 - 17:00</option>
+            <option value="full-day">Full Day</option>
+        </select>
+    
+        <button id="addAvailability">Add Availability</button>
+    
+        <h3>Confirmed Availability</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Time Slot</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="availabilityTable">
+                <!-- JavaScript will dynamically add booked slots -->
+            </tbody>
+        </table>
+    
+        <button id="saveAvailability">Save</button>
+        <button id="resetAvailability">Reset</button>
+    </section>
+
+
+    <br>
+    <br>
+    <!-- Tour Package & Pricing -->
+    <section>
+        <h2>Set Tour Package & Pricing</h2>
+        <form id="packageForm">
+            <label for="package-name">Package Name</label>
+            <input type="text" id="packageName" placeholder="Tour Package Name" required>
+
+            <label for="price">Price (MYR)</label>
+            <input type="number" id="packagePrice" placeholder="Price (MYR)" required>
+            <button type="submit">Add Package</button>
+        </form>
+
+        <!-- Package List -->
+        <table>
+          <thead>
+              <tr>
+                  <th>Package Name</th>
+                  <th>Price (MYR)</th>
+                  <th>Actions</th>
+                  <!-- you can put Remove  -->
+              </tr>
+          </thead>
+          <tbody id="packageTableBody">
+              <!-- Dynamic Content Here -->
+          </tbody>
+      </table>
+
+      <!-- <br><br> -->
+      <!-- <button type="create" class="createbtn">Create Package</button> -->
+      </section>
+
+    <!-- JAVASCRIPT PAGE -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/businessSetUp.js"></script>
+</body>
+</html>

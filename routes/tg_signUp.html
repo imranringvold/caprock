@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide Sign Up</title>
+    <!-- CSS PAGE -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- this page -->
+    <link rel="stylesheet" href="../assets/css/tg_signUp.css">
+
+</head>
+<body>
+    <h1>Tour Guide Sign Up Form</h1> <br>
+    <p>Please fill in the details to create an account.</p>
+    <hr>
+    
+
+    <form>
+        <label for="new-uname">Username:</label><br>
+        <input type="text" id="uname" placeholder="Enter Name" name="name"><br>
+        <label for="newPword">Password:</label><br>
+        <input type="text" id="pword" placeholder="Enter Password" name="pword"><br>
+        <label for="newConPword">Confirm Password:</label><br>
+        <input type="text" id="conPword" placeholder="Enter Confirmed Password" name="conPword"><br>
+        <label for="newEmail">Email:</label><br>
+        <input type="text" id="email" placeholder="Enter Email" name="email"><br> 
+
+        <label for="userType">Honest Question. <br> Would you register as:</label>
+            <select id="userType" name="userType" required>
+                <option value="" disabled selected>Select user type</option>
+                <option value="customer">Customer</option>
+                <option value="tourGuide">Tour Guide</option>
+            </select> <br><br>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <br>
+        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="button" class="cancelbtn">Cancel</button>            
+    </form>
+
+    <!-- JAVASCRIPT PAGE -->
+    <script src="../assets/js/tg_signUp.js"></script>
+</body>
+</html>
